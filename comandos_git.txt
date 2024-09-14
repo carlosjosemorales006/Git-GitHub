@@ -1,0 +1,52 @@
+Aquí tienes una lista de los comandos principales de Git junto con su descripción:
+
+1. git init
+Inicializa un nuevo repositorio Git en el directorio actual. Crea un subdirectorio .git que contiene todos los archivos necesarios para el control de versiones.
+2. git clone <url>
+Clona un repositorio remoto en el directorio local, copiando todos los archivos y su historial de versiones.
+3. git add <archivo>
+Agrega un archivo específico al área de preparación (staging area), preparándolo para ser versionado.
+
+git add .: Agrega todos los archivos en el directorio actual y sus subdirectorios al área de preparación.
+
+4. git commit -m "mensaje"
+Crea un nuevo commit con los cambios del área de preparación y los guarda en el historial del repositorio, junto con un mensaje que describe los cambios.
+5. git status
+Muestra el estado de los archivos en el directorio actual: qué archivos están en el área de preparación, cuáles han cambiado y cuáles no están siendo seguidos por Git.
+6. git push <remoto> <rama>
+Envía los commits locales a un repositorio remoto (por ejemplo, GitHub). El comando suele usarse para actualizar la rama remota.
+7. git pull
+Descarga y fusiona los cambios del repositorio remoto con el repositorio local.
+8. git fetch
+Descarga los cambios desde el repositorio remoto, pero no los fusiona con la rama local. Permite revisar los cambios antes de fusionarlos.
+9. git merge <rama>
+Fusiona los cambios de una rama específica a la rama en la que estás trabajando.
+10. git branch
+Muestra todas las ramas en el repositorio.
+git branch <nombre_rama>: Crea una nueva rama.
+git branch -d <nombre_rama>: Elimina una rama.
+11. git checkout <rama>
+Cambia a una rama existente.
+git checkout -b <nombre_rama>: Crea y cambia a una nueva rama.
+12. git log
+Muestra el historial de commits en el repositorio, junto con detalles como el autor, la fecha y el mensaje de commit.
+13. git diff
+Muestra las diferencias entre los cambios no confirmados y los confirmados, o entre dos commits específicos.
+14. git stash
+Guarda temporalmente los cambios no confirmados para que puedas trabajar en otra cosa, y luego los recupera cuando lo necesites.
+git stash pop: Recupera los cambios guardados.
+15. git reset <archivo>
+Elimina un archivo del área de preparación pero mantiene los cambios en el directorio de trabajo.
+git reset --hard: Restablece el repositorio al último commit, eliminando cualquier cambio no confirmado.
+16. git rm <archivo>
+Elimina un archivo tanto del repositorio como del sistema de archivos.
+git rm --cached <archivo>: Elimina el archivo del control de versiones, pero lo mantiene en el sistema de archivos.
+17. git remote add <nombre> <url>
+Agrega un repositorio remoto con el alias <nombre> (por ejemplo, origin) que apunta a la URL proporcionada.
+18. git rebase <rama>
+Mueve el historial de commits de una rama para que comience a partir del commit más reciente en otra rama, evitando crear un commit de fusión (merge commit).
+19. git tag <nombre_tag>
+Crea un nuevo tag (etiqueta) en el commit actual, comúnmente utilizado para marcar versiones.
+20. git revert <commit>
+Reverte un commit específico creando un nuevo commit que deshace los cambios introducidos por el commit seleccionado.
+Estos son algunos de los comandos más comunes que te ayudarán a gestionar un repositorio Git con eficacia.
